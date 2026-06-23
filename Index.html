@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo App - Vanilla JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Meteo App</h1>
+        
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Cerca una città...">
+            <button id="search-btn">Cerca</button>
+        </div>
+
+        <div id="weather-card" class="weather-card hidden">
+            <h2 id="city-name">Roma</h2>
+            <p id="local-time"></p>
+            <img id="weather-icon" src="" alt="Icona Meteo">
+            <p id="temperature">20°C</p>
+            <p id="description">Sereno</p>
+            <button id="fav-btn">⭐ Aggiungi ai Preferiti</button>
+        </div>
+
+        <div class="favorites-section">
+            <h3>Città Preferite</h3>
+            <ul id="favorites-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
